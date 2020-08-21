@@ -13,6 +13,9 @@ var taskFormHandler = function (event) {
         return false;
     }
 
+    var isEdit = formEl.hasAttribute("data-task-id");
+    console.log(isEdit);
+
     var taskDataObj = {
         name: taskNameInput,
         type: taskTypeInput
